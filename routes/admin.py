@@ -49,9 +49,9 @@ router = APIRouter(
 )
 
 
-@router.get("/test")
+@router.get("/is-admin")
 @router.get("/welcome")
-async def test():
+async def is_admin():
     return response(msg=random.choice([
         "Ogali, Dokutah",
         "Welcome, my master desu!",
