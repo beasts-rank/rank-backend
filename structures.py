@@ -107,5 +107,5 @@ class Config:
             raw_beasts.values() if isinstance(raw_beasts, dict) else raw_beasts
         )
         beasts_map = dict((beast.uuid, beast) for beast in beasts)
-        max_pagesize = json.get('beasts', 35)
+        max_pagesize = json.get('max_pagesize', 35)
         return cls(beasts_map, max_pagesize)
